@@ -26,13 +26,17 @@ sigma = zeros(1, size(X, 2));
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
 
-
-
-
-
-
-
-
+X_dimension = size(X);
+X_row = X_dimension(1);
+X_column = X_dimension(2);
+mu = mean(X);
+sigma = std(X);
+for i = 1:X_column
+    for j = 1:X_row
+        X_norm(j,i) = X_norm(j,i) - mu(i);
+        X_norm(j,i) = X_norm(j,i) / sigma(i);
+    end
+end
 
 % ============================================================
 
