@@ -14,6 +14,6 @@ J = 0;
 %               You should set J to the cost.
 
 % Clean vectorised notaion			   
-J = (1/(2*m))*((theta'*X' - y')*(theta'*X' - y')')  ;
+J = (1/(2*m))*((theta'*X' - y')*(theta'*X' - y')');
 
 % =========================================================================
